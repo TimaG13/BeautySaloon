@@ -118,6 +118,10 @@ select::-ms-expand {
   padding: 0 0 0 0;
 }
 
+.header{
+  position: relative;
+}
+
 .main > .content .header img {
   width: 100%;
 }
@@ -478,14 +482,31 @@ footer {
   margin-left: /*-97*/0;
 }
 
-.page > div {
-}
 
 .page p {
   margin: 40px 0 10px 0;
   font-family: 'Minion Pro Regular',sans-serif;
   font-weight: 500;
   font-size: 1.5em;
+}
+
+.box_inst{
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 85px;
+  height: 65px;
+  background: #ffffff;
+  box-shadow: 0 2px 30px -11px #000000;
+  text-align: center;
+
+  a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: -20px;
+  }
 }
 
 .page ul {
