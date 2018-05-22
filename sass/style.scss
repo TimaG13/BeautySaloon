@@ -483,6 +483,10 @@ footer {
   margin-top: 80px;
   margin-bottom: 60px;
   margin-left: /*-97*/0;
+  .box_wrapp{
+    max-width: 915px;
+    display: inline-block;
+  }
 }
 
 
@@ -490,7 +494,8 @@ footer {
   margin: 40px 0 10px 0;
   font-family: 'Minion Pro Regular',sans-serif;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 18px;
+  color: #000;
 }
 
 .box_inst{
@@ -658,5 +663,24 @@ footer {
 #modal_profile_image .modal-body img {
   max-height: 600px;
 }
+
+.main>.content .header img.mob-header-bg{
+  display: none;
+}
+
 ////////////
 
+@media only screen and (max-width: 1024px) {
+  .page .box_wrapp{
+    max-width: 630px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .main > .content .header img.header-bg {
+    display: none;
+  }
+  .main>.content .header img.mob-header-bg{
+    display: block;
+    max-height: 758px;
+  }
+}
