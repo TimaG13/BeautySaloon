@@ -130,10 +130,12 @@ select::-ms-expand {
   position: absolute;
   display: inline-block;
   z-index: 3;
+  height: 100%;
 }
 
 .back_rose {
   background-color: #FFBED6;
+  height: 100%;
 }
 
 .rose {
@@ -172,6 +174,7 @@ select::-ms-expand {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+  font-family: 'TwCenClassMTStd-Regular',sans-serif;
 }
 
 .main .side_menu .opened .ico {
@@ -189,7 +192,6 @@ select::-ms-expand {
   fill: none;
   stroke: #000;
   stroke-linecap: square;
-  stroke-linejoin: square;
   stroke-width: 3;
   transition: .5s;
 }
@@ -295,6 +297,7 @@ select::-ms-expand {
   margin-top: 10px;
   border-radius: 0;
   padding: 0 6px;
+  font-family: 'Minion Pro Regular', sans-serif;
 
   &:hover{
     border-color: #ced3d5;
@@ -503,12 +506,17 @@ footer {
 
   a{
     display: inline-block;
-    width: 36px;
-    height: 36px;
-    vertical-align: -20px;
+    width: 100%;
+    height: 100%;
   }
 }
-
+.main > .content .header .box_inst a img{
+  width: 36px;
+  height: 36px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .page ul {
   list-style-type: none;
   -webkit-padding-start: 0;
@@ -574,6 +582,7 @@ footer {
   color: #ffffff;
   font-size: 12px;
   transition: all .3s;
+  font-family:'Century GothicBold',sans-serif;
 }
 
 .line{
