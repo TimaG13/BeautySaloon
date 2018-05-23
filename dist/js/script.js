@@ -1,6 +1,6 @@
 var menu_state = 0;
 $( document ).ready(function() {
-    $(".opened").css("height",$(".closed").css("height"));
+    // $(".opened").css("height",$(".closed").css("height"));
 
     $(".main .side_menu .opened .button").click(function(){
         menu_state = 1-menu_state;
