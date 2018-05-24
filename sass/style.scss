@@ -290,6 +290,7 @@ select::-ms-expand {
   top: 53px;
   right: 128px;
   text-align: center;
+  z-index: 99999;
 }
 
 .header .user .choose_lang a.btn{
@@ -726,7 +727,6 @@ img.mob-header-bg{
           display: flex;
           padding: 0 61px;
           .box_img{
-            margin-right: 78px;
             img{
               max-width: 580px;
             }
@@ -750,7 +750,7 @@ img.mob-header-bg{
               }
             }
             p{
-              margin-bottom: 93px;
+              margin-bottom: 70px;
               font-size: 18px;
               font-family: MinionProRegular;
               line-height: 21px;
@@ -769,6 +769,9 @@ img.mob-header-bg{
   }
 }
 
+.mr-box{
+  margin-right: 80px;
+}
 
 .col-lg-12{
   padding: 0;
@@ -800,7 +803,7 @@ img.mob-header-bg{
       }
     }
     p{
-      margin-bottom: 93px;
+      margin-bottom: 117px;
       font-size: 18px;
       font-family: MinionProRegular;
       line-height: 21px;
