@@ -28,7 +28,7 @@
   font-weight: normal;
   font-style: normal;
 }
-//fonts MinionPro-Regular
+//fonts MinionPro
 @font-face {
   font-family: 'Minion Pro';
   src: url('../../fonts/MinionPro/MinionPro-It.woff2') format('woff2'),
@@ -283,14 +283,6 @@ select::-ms-expand {
 
 .svg-1.cross path {
   d: path("M26,9 L9,26 M9,9 L26,26 M50,-11 L46,-7");
-}
-
-.header .logo {
-  font-size: 48px;
-  position: absolute;
-  top: 20px;
-  left: 137px;
-  display: inline-block;
 }
 
 .header .user {
@@ -686,10 +678,150 @@ img.mob-header-bg{
 }
 
 
+//our services
+.os_mb{
+  margin-bottom: 225px;
+  .user.white.our_ser{
+    a{
+      color: #2f2f2f;
+      border-color: #2f2f2f;
+    }
+    a.link-tell{
+      border: none;
+    }
+  }
+  .wrapper_logo{
+    position: absolute;
+    top: 51px;
+    left: 150px;
+
+    .link-logo{
+      display: block;
+
+      .logo{
+        width: 146px;
+      }
+    }
+  }
+  .wr_desc{
+    margin-bottom: 111px;
+    h1{
+      font-size: 25px;
+      color: #2f2f2f;
+      margin: 86px 0;
+    }
+    p{
+      font-size: 18px;
+      font-family: "Myriad Pro";
+      color: #000000;
+    }
+  }
+  .container{
+
+    .row{
+
+      .col-lg-12{
+        padding: 0;
+        .box_to{
+          display: flex;
+          padding: 0 61px;
+          .box_img{
+            margin-right: 78px;
+            img{
+              max-width: 580px;
+            }
+          }
+          .box_product{
+            max-width: 473px;
+
+            span{
+              display: inline-block;
+              margin-bottom: 40px;
+              position: relative;
+              font-size: 25px;
+              font-family: "Myriad Pro";
+              &:before{
+                position: absolute;
+                content: "";
+                bottom: -15px;
+                width: 100%;
+                height: 2px;
+                background: #000;
+              }
+            }
+            p{
+              margin-bottom: 93px;
+              font-size: 18px;
+              font-family: MinionProRegular;
+              line-height: 21px;
+            }
+            a.btn_price{
+              font-size: 20px;
+              color: #404c31;
+              border: solid 2px #373f48;
+              border-radius: 0;
+              padding: 15px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.col-lg-12{
+  padding: 0;
+}
+.box_to{
+  display: flex;
+  padding: 0 60px;
+  .box_img{
+    img{
+      max-width: 580px;
+    }
+  }
+  .box_product{
+    max-width: 473px;
+
+    span{
+      display: inline-block;
+      margin-bottom: 40px;
+      position: relative;
+      font-size: 25px;
+      font-family: "Myriad Pro";
+      &:before{
+        position: absolute;
+        content: "";
+        bottom: -15px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+      }
+    }
+    p{
+      margin-bottom: 93px;
+      font-size: 18px;
+      font-family: MinionProRegular;
+      line-height: 21px;
+    }
+    a.btn_price{
+      font-size: 20px;
+      color: #404c31;
+      border: solid 2px #373f48;
+      border-radius: 0;
+      padding: 15px 30px;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 1024px) {
   .page .box_wrapp{
     max-width: 630px;
   }
+  //our services
+
 }
 @media only screen and (max-width: 980px) {
   img.header-bg {
@@ -702,4 +834,6 @@ img.mob-header-bg{
   .header .user{
     right: 20px;
   }
+  //our services
+
 }
