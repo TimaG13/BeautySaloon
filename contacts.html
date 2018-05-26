@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Document</title>
     <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
+
 <div class="main">
     <div class="content container-fluid">
-        <div class="header">
+        <div class="header mob_head">
             <div class="side_menu">
-                <div class="opened back_rose">
+                <div class="opened back_rose height_box">
                     <a href="#" class="button tog">
                         <svg viewBox="0 0 35 35" class="svg-1 ico">
                             <path class="pict" d="M22,3 L3,22 M32,13 L13,32 M22,13 L13,22"></path>
@@ -25,13 +26,13 @@
                         <span class="title">Menu</span>
                     </a>
                 </div>
-                <div class="closed back_rose">
+                <div class="closed back_rose heid_ti">
                     <ul>
                         <li class="active ">
                             <a href="home.html">Home</a>
                         </li>
                         <li class=" ">
-                            <a href="OurServices.html">BeautySaloon</a>
+                            <a href="OurServices.html">Our Services</a>
                         </li>
                         <li class=" ">
                             <a href="contacts.html">Contacts</a>
@@ -50,39 +51,66 @@
                     <a href="" class="link">Warranties</a>
                 </div>
             </div>
-            <img class="header-bg" src="dist/img/header-bg.png">
-            <img class="mob-header-bg" src="dist/img/mob-header.png">
+            <div class="wrapper_logo">
+                <a class="link-logo" href="#">
+                    <img class="logo" src="dist/img/logo.png" alt="">
+                </a>
+            </div>
             <div class="box_inst">
                 <a href="#"><img src="dist/img/iconInst.png"></a>
             </div>
-            <div class="user white">
+            <div class="user white our_ser">
                 <div class="phone">
-                    <a class="btn" href="#">+38 093 26 00 000</a>
+                    <a class="btn link-tell" href="#">+38 093 26 00 000</a>
                 </div>
                 <div class="choose_lang">
-                    <a class="btn" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Обратный звонок</a>
+                    <a class="btn" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Обратный
+                        звонок</a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid page1 page">
-            <div class="text-center">
-                <div class="box_wrapp text-left">
-                    <h1>Mira</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+        <div class="container mr_top">
+            <div class="row">
+                <div class="col-lg-6 box_contaks">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="box_for email_box">
+                        <span>E-mail :</span>
+                        <p>info@miramira.com</p>
+                    </div>
+                    <div class="box_for pos_box">
+                        <span>Address :</span>
+                        <p>Ukraine, Kharkiv city, Hirschmana str.18</p>
+                    </div>
+                    <div class="box_for phone_box">
+                        <span>Phone :</span>
+                        <p>+38 093 26 00 000</p>
+                        <p>+38 093 26 00 000</p>
+                        <p>+38 093 26 00 000</p>
+                    </div>
+                    <div class="box_for soz_box">
+                        <span>Social networks :</span>
+                        <a class="btn link_inst" href="#"> Instagram</a>
+                        <a class="btn link_faceb" href="#"> Facebook</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 box_contaks">
+                    <h3>Напишите нам </h3>
+                    <form>
+                        <input type="text" placeholder="Имя" >
+                        <input type="text" placeholder="E-mail">
+                        <p>Задайте интересующий Вас вопрос</p>
+                        <textarea class="form-control" id="comment"></textarea>
+                        <button>Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>
         <div class="wr_link">
-            <a href="" class="black">Задайте нам вопрос</a>
+            <a href="" class="black">Бесплатная консультация</a>
         </div>
     </div>
 </div>
+
 <footer class="back_rose">
     <div class="line text-center">
         <a href="#" class="copyright text-uppercase">DESIGN BY OVERALLFUTURE.COM</a>

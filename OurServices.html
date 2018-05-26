@@ -6,17 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../src/bootstrap3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/bootstrap3/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
 
 <div class="main">
     <div class="content container-fluid">
-        <div class="header os_mb">
+        <div class="header mob_head">
             <div class="side_menu">
-                <div class="opened back_rose">
+                <div class="opened back_rose height_box">
                     <a href="#" class="button tog">
                         <svg viewBox="0 0 35 35" class="svg-1 ico">
                             <path class="pict" d="M22,3 L3,22 M32,13 L13,32 M22,13 L13,22"></path>
@@ -26,7 +26,7 @@
                         <span class="title">Menu</span>
                     </a>
                 </div>
-                <div class="closed back_rose">
+                <div class="closed back_rose heid_ti">
                     <ul>
                         <li class="active ">
                             <a href="home.html">Home</a>
@@ -35,7 +35,7 @@
                             <a href="OurServices.html">Our Services</a>
                         </li>
                         <li class=" ">
-                            <a href="">Romantic trips</a>
+                            <a href="contacts.html">Contacts</a>
                         </li>
                         <li class=" ">
                             <a href="">Love story</a>
@@ -64,49 +64,44 @@
                     <a class="btn link-tell" href="#">+38 093 26 00 000</a>
                 </div>
                 <div class="choose_lang">
-                    <a class="btn" href="#">Обратный звонок</a>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="wr_desc">
-                            <h1 class="text-center">Наши Услуги</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                                galley
-                                of type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries,
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                                passages,
-                                and more recently with desktop publishing software like Aldus PageMaker including
-                                versions of
-                                Lorem Ipsum.</p>
-                        </div>
-                        <div class="box_to">
-                            <div class="box_img col-lg-6">
-                                <img src="dist/img/box1.png" alt="">
-                            </div>
-                            <div class="box_product col-lg-6">
-                                <span>Ресницы</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.</p>
-                                <a class="btn btn_price" href="#">От 200 UAN</a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="btn" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Обратный
+                        звонок</a>
                 </div>
             </div>
         </div>
-        <div class="container os_mb">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="box_to os_mb">
-                        <div class="box_product col-lg-6">
+                    <div class="wr_desc">
+                        <h1 class="text-center">Наши Услуги</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of
+                            Lorem Ipsum.</p>
+                    </div>
+                    <div class="box_to">
+                        <div class="box_img col-lg-6">
+                            <img src="dist/img/box1.png" alt="">
+                        </div>
+                        <div class="box_product col-lg-6 ">
+                            <span>Ресницы</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.</p>
+                            <a class="btn btn_price" href="#">От 200 UAN</a>
+                        </div>
+                    </div>
+                    <div class="box_to pos_img">
+                        <div class="box_product col-lg-6 mr_bt">
                             <span>Сахарная депиляция</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -118,8 +113,7 @@
                             <img src="dist/img/box2.png" alt="">
                         </div>
                     </div>
-
-                    <div class="box_to os_mb">
+                    <div class="box_to">
                         <div class="box_img mr-box col-lg-6">
                             <img src="dist/img/box3.png" alt="">
                         </div>
@@ -132,9 +126,8 @@
                             <a class="btn btn_price" href="#">От 200 UAN</a>
                         </div>
                     </div>
-
-                    <div class="box_to">
-                        <div class="box_product col-lg-6">
+                    <div class="box_to pos_img">
+                        <div class="box_product col-lg-6 mr_bt">
                             <span>Воск</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -160,6 +153,24 @@
         <a href="#" class="copyright text-uppercase">DESIGN BY OVERALLFUTURE.COM</a>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog cast_modal" role="document">
+        <a type="button" class="close modal_btn_close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></a>
+        <div class="modal-content my_modal">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Мы с радостью Вам перезвоним!</h5>
+            <div class="modal-body">
+                <form class="form_modal">
+                    <input class="text-center" type="text" placeholder="Ваш номер телефона">
+                    <a class="btn btn_mod" href="#">Перезвоните</a>
+                </form>
+                <p>Например 380 00 00 000</p>
+                <span>Thank you   !</span>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="src/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="src/bootstrap3/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="dist/js/script.js"></script>
