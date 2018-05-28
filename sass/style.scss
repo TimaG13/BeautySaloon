@@ -154,15 +154,14 @@ select::-ms-expand {
 
 .main .side_menu > div {
   position: absolute;
-  overflow: hidden;
 }
 
 .main .side_menu .closed {
   width: 361px;
   left: -361px;
-  z-index: 3;
   transition: all 1s;
   padding-bottom: 30px;
+  z-index: -1;
 }
 
 .main .side_menu .closed .link {
@@ -188,43 +187,13 @@ select::-ms-expand {
   font-family: 'TwCenClassMTStd-Regular', sans-serif;
 }
 
-.main .side_menu .opened .ico {
-  margin: 51px 29px 9px 29px;
-  width: 25px;
-}
 
-.svg-1 {
-  margin-bottom: 5%;
-}
 
-.svg-1 polyline,
-.svg-1 line,
-.svg-1 path {
-  fill: none;
-  stroke: #000;
-  stroke-linecap: square;
-  stroke-width: 3;
-  transition: .5s;
-}
-
-.svg-1.menu path {
-  d: path("M22,3 L3,22 M32,13 L13,32 M22,13 L13,22");
-}
-
-.svg-1.cross path {
-  d: path("M26,9 L9,26 M9,9 L26,26 M50,-11 L46,-7");
-}
 
 /*.main .side_menu:hover .closed,*/
 .main .side_menu .closed.active {
   left: 0;
   height: 100%;
-}
-
-.main .side_menu .closed .ico {
-  margin-top: 42px;
-  font-size: 48px;
-  margin-left: 52px;
 }
 
 .main .side_menu .closed > ul {
@@ -238,9 +207,6 @@ select::-ms-expand {
 
 .main .side_menu ul {
   -moz-padding-start: 0;
-}
-
-.main .side_menu .closed ul li {
 }
 
 .main .side_menu .closed ul li a:after {
@@ -263,28 +229,18 @@ select::-ms-expand {
 
 .main .side_menu .button {
   color: initial;
-
   display: inline-block;
 }
 
 .main .side_menu .button.tog {
   position: absolute;
-  top: 0;
-  z-index: 4;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.main .side_menu .button.menu {
-  margin: 84px 20.5px 0;
+  display: block;
+  top: 34px;
+  left: 32px;
 }
 
 .header {
   min-height: 100px;
-}
-
-.svg-1.cross path {
-  d: path("M26,9 L9,26 M9,9 L26,26 M50,-11 L46,-7");
 }
 
 .header .user {
@@ -878,6 +834,12 @@ img.mob-header-bg {
   }
 }
 //contacts
+.main .side_menu{
+  height: 753px;
+}
+.main .side_menu .closed.heid_ti{
+  height: 100%;
+}
 .mr_top{
   margin-top: 67px;
   background: #fff;
@@ -970,6 +932,9 @@ img.mob-header-bg {
   }
   .main .side_menu .closed>ul{
     margin-bottom: 443px;
+  }
+  .main .side_menu {
+    height: 546px;
   }
 }
 
@@ -1126,12 +1091,7 @@ img.mob-header-bg {
     top: 3px;
   }
 }
-.main .side_menu{
-  height: 753px;
-}
-.main .side_menu .closed.heid_ti{
-  height: 100%;
-}
+
 @media only screen and (max-width: 425px){
   .main .side_menu .opened .title{
     font-size: 16px;
