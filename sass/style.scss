@@ -32,7 +32,7 @@
 
 //fonts MinionPro-Regular
 @font-face {
-  font-family: MinionProRegular;
+  font-family: MinionPro-Regular;
   src: url('../../fonts/MinionPro/MinionPro-Regular.woff2') format('woff2'),
   url('../../fonts/MinionPro/MinionPro-Regular.woff') format('woff'),
   url('../../fonts/MinionPro/MinionPro-Regular.ttf') format('truetype');
@@ -1138,16 +1138,61 @@ img.mob-header-bg {
         margin-bottom: 25px;
       }
       .box_text {
-        overflow: scroll;
+        overflow: overlay;
         height: 150px;
+        display: none;
         p {
           font: 18px MyriadPro-Regular, sans-serif;
           margin: 0;
+          padding-right: 15px;
         }
       }
       p {
         font: 18px MyriadPro-Regular, sans-serif;
         margin: 0;
+        padding-right: 15px;
+      }
+    }
+    &:hover .box_text {
+      display: block;
+    }
+  }
+}
+
+//recommendations
+.h_recom {
+  margin: 76px 0 146px;
+}
+
+.container {
+  .row {
+    .col-lg-12 {
+      .wr_desc.mar_n{
+        margin-bottom: 0;
+        .recomm_content {
+
+          span.h_puncht {
+            font: 24px MinionPro-Regular, sans-serif;
+            color: #000000;
+            margin-bottom: 45px;
+            display: block;
+          }
+          p {
+            margin: 0 25px 72px;
+          }
+          & p:last-child{
+            margin-bottom: 0;
+          }
+          ul {
+            margin-bottom: 80px;
+            padding-left: 169px;
+            li {
+              list-style: none;
+              font: 18px MinionPro-Regular, sans-serif;
+              color: #000000;
+            }
+          }
+        }
       }
     }
   }
@@ -1201,9 +1246,6 @@ img.mob-header-bg {
   .main .side_menu .height_box {
     height: 735px;
   }
-  .main .side_menu .closed > ul {
-    margin-bottom: 403px;
-  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -1247,9 +1289,6 @@ img.mob-header-bg {
   .main .side_menu .height_box {
     height: 688px;
   }
-  .main .side_menu .closed > ul {
-    margin-bottom: 356px;
-  }
   .cast_modal a.modal_btn_close {
     right: 18px;
     top: 230px;
@@ -1276,9 +1315,6 @@ img.mob-header-bg {
   }
   .main .side_menu .height_box {
     height: 468px;
-  }
-  .main .side_menu .closed > ul {
-    margin-bottom: 136px;
   }
   .cast_modal {
     width: 100%;
@@ -1331,9 +1367,6 @@ img.mob-header-bg {
   }
   .main .side_menu .height_box {
     height: 748px;
-  }
-  .main .side_menu .closed > ul {
-    margin-bottom: 416px;
   }
   .header .wrapper_logo {
     left: 96px;
