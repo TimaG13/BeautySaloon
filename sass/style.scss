@@ -203,7 +203,7 @@ select::-ms-expand {
 
 .main .side_menu .closed .wrapper-link .link {
   border-bottom: 1px solid #fff;
-  display: inline-block;
+  display: table;
   color: #ffffff;
   font: 18px MinionProRegular, sans-serif;
   text-decoration: none;
@@ -349,7 +349,7 @@ select::-ms-expand {
   top: 53px;
   right: 128px;
   text-align: center;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .header .user .choose_lang a.btn {
@@ -954,8 +954,8 @@ img.mob-header-bg {
       form {
 
         textarea {
-          min-width: 504px;
-          min-height: 218px;
+          max-width: 504px;
+          height: 218px;
           border: solid 1px #373f48;
           border-radius: 0;
           margin-bottom: 27px;
@@ -1033,7 +1033,7 @@ img.mob-header-bg {
 
   h2 {
     margin: 0 auto;
-    width: 591px;
+    max-width: 591px;
     font: 24px MinionProRegular, sans-serif;
   }
 
@@ -1167,7 +1167,7 @@ img.mob-header-bg {
 .container {
   .row {
     .col-lg-12 {
-      .wr_desc.mar_n{
+      .wr_desc.mar_n {
         margin-bottom: 0;
         .recomm_content {
 
@@ -1180,7 +1180,7 @@ img.mob-header-bg {
           p {
             margin: 0 25px 72px;
           }
-          & p:last-child{
+          & p:last-child {
             margin-bottom: 0;
           }
           ul {
@@ -1202,14 +1202,8 @@ img.mob-header-bg {
   .wr_desc {
     padding: 0 140px;
   }
-  .main .side_menu .height_box {
-    height: 775px;
-  }
   .container .row .col-lg-12 .box_to {
     padding: 0 46px;
-  }
-  .main .side_menu {
-    height: 546px;
   }
 }
 
@@ -1246,6 +1240,15 @@ img.mob-header-bg {
   .main .side_menu .height_box {
     height: 735px;
   }
+  .mr_top .row .box_contaks {
+    padding-left: 70px;
+  }
+  .slid_master .slider_box .box_content p{
+    opacity: 1;
+  }
+  .slid_master .slider_box .box_content .box_text{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -1254,10 +1257,46 @@ img.mob-header-bg {
   }
   img.mob-header-bg {
     display: block;
-    padding-left: 95px;
   }
   .header .user {
-    right: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 203px;
+  }
+  .main .side_menu {
+    width: 100%;
+    height: 82px;
+  }
+  .main .side_menu .opened {
+    width: 100%;
+  }
+  .main .side_menu .button.tog {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main .side_menu .closed{
+    width: 100%;
+    left: 0;
+    top: -700px;
+  }
+  .main .side_menu .closed.active {
+    top: 0;
+    height: 700px;
+  }
+  .header.mob_head{
+    margin-bottom: 245px;
+  }
+  .container .row .col-lg-12 .wr_desc h1{
+    margin: 0 0 30px;
+  }
+  .header .wrapper_logo{
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .side_menu .closed>ul{
+    margin: 91px auto 0;
   }
   //our services
   .wr_desc {
@@ -1299,12 +1338,13 @@ img.mob-header-bg {
   .cast_modal {
     width: 90%;
   }
-
+  .mr_top .row .box_contaks {
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container .row .col-lg-12 .wr_desc {
-    width: 70%;
     margin: 0 auto 77px;
   }
   .mob_head {
@@ -1318,6 +1358,20 @@ img.mob-header-bg {
   }
   .cast_modal {
     width: 100%;
+  }
+  .mr_top .row .box_contaks {
+    text-align: center;
+  }
+  .mr_top .row .box_contaks .box_for a.btn {
+    margin: 0 auto 10px;
+  }
+  .mr_top .row .box_contaks form textarea {
+    margin: 0 auto 27px;
+  }
+  .header .wrapper_logo {
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -1353,24 +1407,14 @@ img.mob-header-bg {
   .cast_modal .my_modal {
     padding: 31px 60px;
   }
-  .header .user {
-    top: 3px;
-  }
 }
 
 @media only screen and (max-width: 425px) {
   .main .side_menu .opened .title {
     font-size: 16px;
   }
-  .main .side_menu .button.menu {
-    margin: 84px 15px 0;
-  }
   .main .side_menu .height_box {
     height: 748px;
-  }
-  .header .wrapper_logo {
-    left: 96px;
-    top: 60px;
   }
   .header .wrapper_logo .link-logo .logo {
     width: 104px;
@@ -1421,5 +1465,17 @@ img.mob-header-bg {
   }
   img.mob-header-bg {
     padding-left: 50px;
+  }
+  .mr_top .row .box_contaks form input {
+    width: 300px;
+  }
+  .mr_top .row .box_contaks h3 {
+    width: 131px;
+    margin: 0 auto 70px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .cast_modal .my_modal .modal-body form.form_modal input{
+    width: 212px;
   }
 }
