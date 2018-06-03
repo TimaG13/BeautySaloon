@@ -1373,6 +1373,9 @@ img.mob-header-bg {
     left: 50%;
     transform: translateX(-50%);
   }
+  .container .row .col-lg-12 .wr_desc.mar_n .recomm_content ul{
+    padding-left: 40px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1462,9 +1465,6 @@ img.mob-header-bg {
   }
   .container .row .col-lg-12 .box_to .box_product a.btn_price {
     padding: 13px 39px;
-  }
-  img.mob-header-bg {
-    padding-left: 50px;
   }
   .mr_top .row .box_contaks form input {
     width: 300px;
