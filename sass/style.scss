@@ -1326,7 +1326,6 @@ $secondColor: #FFBED6;
   padding-bottom: 170px;
   background: #ffffff;
 
-
   .price {
 
     h3 {
@@ -1368,16 +1367,60 @@ $secondColor: #FFBED6;
 
     a {
       padding: 20px 30px;
-      background:#FFBED6;
+      background: #FFBED6;
       transition: all 300ms ease;
       box-shadow: 0 4px 10px 2px rgba(black, 0.2);
 
-      &:hover{
+      &:hover {
         box-shadow: none;
         color: #fff;
       }
-      &:before{
+      &:before {
         display: none;
+      }
+    }
+  }
+}
+
+//Thank you
+.modal_th {
+  max-width: 250px;
+  margin: 110px auto;
+
+  a.modal_btn_close {
+    width: 31px;
+    height: 31px;
+    position: relative;
+    right: 29px;
+    top: -6px;
+    opacity: 1;
+    z-index: 99999;
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background: #ffffff;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+  .my_modal {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    .modal-body{
+      span{
+        font: 40px 'Beauty';
+        color: #feccde;
       }
     }
   }
