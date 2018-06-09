@@ -27,10 +27,9 @@ $( document ).ready(function() {
 
 
     // slide
-    $('.slid_master').slick({
-        lazyLoad: 'ondemand',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        variableWidth: true
+    $(".owl-carousel").owlCarousel({
+        margin:10,
+        items:3,
+        loop:true
     });
 });

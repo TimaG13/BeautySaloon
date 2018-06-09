@@ -25,8 +25,7 @@
                 <div class="closed back_rose heid_ti">
                     <ul>
                         <li class="active"><a href="index.html">Главная</a></li>
-                        <li class=" "><a href="">О нас</a></li>
-                        <li class=" "><a href="WhyWe.html">link</a></li>
+                        <li class=" "><a href="WhyWe.html">О нас</a></li>
                         <li class=" "><a href="OurServices.html">Услуги</a></li>
                         <li class=" "><a href="contacts.html">Контакты</a></li>
                     </ul>
@@ -38,7 +37,7 @@
                 </div>
             </div>
             <div class="wrapper_logo">
-                <a class="link-logo" href="#">
+                <a class="link-logo" href="index.html">
                     <img class="logo" src="dist/img/logo.png" alt="">
                 </a>
             </div>
@@ -74,54 +73,66 @@
                             Lorem Ipsum.</p>
                     </div>
                     <div class="box_to">
-                        <div class="box_img col-lg-6">
+                        <a href="linkBr.html" class="wrapper_link"></a>
+                        <div class="box_img">
                             <img src="dist/img/box1.png" alt="">
                         </div>
-                        <div class="box_product col-lg-6 ">
+                        <div class="box_product  ">
                             <span>Ресницы</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
                                 book.</p>
-                            <a class="btn btn_price" href="#">От 200 UAN</a>
+                            <div class="button-item">
+                                <a class="btn btn_price btn-6" href="#">От 200 UAN</a>
+                            </div>
                         </div>
                     </div>
                     <div class="box_to pos_img">
-                        <div class="box_product col-lg-6 mr_bt">
+                        <a href="#" class="wrapper_link"></a>
+                        <div class="box_product mr_bt">
                             <span>Сахарная депиляция</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
                                 book.</p>
-                            <a class="btn btn_price" href="#">От 200 UAN</a>
+                            <div class="button-item">
+                                <a class="btn btn_price btn-6" href="#">От 200 UAN</a>
+                            </div>
                         </div>
-                        <div class="box_img col-lg-6">
+                        <div class="box_img">
                             <img src="dist/img/box2.png" alt="">
                         </div>
                     </div>
                     <div class="box_to">
-                        <div class="box_img mr-box col-lg-6">
+                        <a href="#" class="wrapper_link"></a>
+                        <div class="box_img mr-box">
                             <img src="dist/img/box3.png" alt="">
                         </div>
-                        <div class="box_product col-lg-6">
+                        <div class="box_product">
                             <span>Ресницы</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
                                 book.</p>
-                            <a class="btn btn_price" href="#">От 200 UAN</a>
+                            <div class="button-item">
+                                <a class="btn btn_price btn-6" href="#">От 200 UAN</a>
+                            </div>
                         </div>
                     </div>
                     <div class="box_to pos_img">
-                        <div class="box_product col-lg-6 mr_bt">
+                        <a href="#" class="wrapper_link"></a>
+                        <div class="box_product mr_bt">
                             <span>Воск</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
                                 book.</p>
-                            <a class="btn btn_price" href="#">От 200 UAN</a>
+                            <div class="button-item">
+                                <a class="btn btn_price btn-6" href="#">От 200 UAN</a>
+                            </div>
                         </div>
-                        <div class="box_img col-lg-6">
+                        <div class="box_img">
                             <img src="dist/img/box4.png" alt="">
                         </div>
                     </div>
@@ -129,14 +140,14 @@
             </div>
         </div>
         <div class="wr_link">
-            <a href="" class="black">Задайте нам вопрос</a>
+            <a href="#" class="black" type="button" data-toggle="modal" data-target="#Modal1">Задайте нам вопрос</a>
         </div>
     </div>
 </div>
 
 <footer class="back_rose">
     <div class="line text-center">
-        <a href="#" class="copyright text-uppercase">DESIGN BY OVERALLFUTURE.COM</a>
+        <a href="http://overallfuture.com/" class="copyright text-uppercase">Created by</a>
     </div>
 </footer>
 <!-- Modal -->
@@ -157,6 +168,26 @@
         </div>
     </div>
 </div>
+<!-- Modal 2 -->
+<div class="modal fade" id="Modal1">
+    <div class="modal-dialog form-modal" role="document">
+        <a type="button" class="close modal_btn_close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></a>
+        <div class="modal-content my_modal">
+            <h5 class="modal-title">Modal title</h5>
+            <div class="modal-body">
+                <form class="form_modal form_wei">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="E-mail">
+                    <p>Ваш вопрос</p>
+                    <textarea class="form-control" id="comment"></textarea>
+                    <button class="btn btn_mod" href="#">Отправит</button>
+                </form>
+                <span>Thank you   !</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="src/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="src/bootstrap3/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="dist/js/script.js"></script>
