@@ -1081,6 +1081,7 @@ $secondColor: #FFBED6;
 //contacts
 .main .side_menu {
   height: 768px;
+  max-height: 80%;
 }
 
 .main .side_menu .closed.heid_ti {
@@ -1412,7 +1413,7 @@ div.button:hover {
         left: 60%;
         background: #FFBED6;
         width: 2px;
-        height: 100%;
+        height: 85%;
       }
       ul {
         font: 20px MinionProRegular, sans-serif;
@@ -1433,6 +1434,7 @@ div.button:hover {
     position: relative;
 
     a {
+      color: #ffffff;
       padding: 20px 30px;
       background: #FFBED6;
       transition: all 300ms ease;
@@ -1440,7 +1442,7 @@ div.button:hover {
 
       &:hover {
         box-shadow: none;
-        color: #fff;
+        color: #f7f7f7;
       }
       &:before {
         display: none;
@@ -1743,13 +1745,46 @@ div.button:hover {
         textarea {
           max-width: 100%;
         }
-        p{
+        p {
           font-size: 18px;
         }
-        div.button{
+        div.button {
           width: 240px;
           margin: 0 auto;
         }
+      }
+    }
+  }
+}
+
+.form_modal {
+
+  i.wr-input {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background: red;
+      transition: all .4s;
+    }
+    i.icon-vos {
+      position: absolute;
+      display: none;
+      color: #ff0000;
+      font-size: 18px;
+      left: 90%;
+      top: 100%;
+    }
+    i.wr-input.close_pe{//клас который должен добовлятся .close_pe
+      &:before {
+        width: 100%;
+      }
+      i.icon-vos {
+        display: block;
       }
     }
   }
@@ -1828,6 +1863,7 @@ div.button:hover {
   .main .side_menu {
     width: 100%;
     height: 82px;
+    min-height: 82px;
   }
   .main .side_menu .opened {
     width: 100%;
