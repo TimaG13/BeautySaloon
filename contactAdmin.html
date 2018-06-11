@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Document</title>
     <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/bootstrap3/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
+
 <div class="main">
     <div class="content container-fluid">
-        <div class="header">
+        <div class="header mob_head">
             <div class="side_menu">
                 <div class="opened back_rose">
                     <a href="#" class="button tog menu">
@@ -21,7 +22,7 @@
                         <span class="title">Menu</span>
                     </a>
                 </div>
-                <div class="closed back_rose">
+                <div class="closed back_rose heid_ti">
                     <ul>
                         <li class="active"><a href="index.html">Главная</a></li>
                         <li class=" "><a href="WhyWe.html">О нас</a></li>
@@ -29,22 +30,53 @@
                         <li class=" "><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <div class="wrapper-link">
-                        <a href="training.html" class="link active">Обучение</a>
-                        <a href="" class="link">Связаться с администратором</a>
-                        <a href="recommendations.html" class="link ">Рекомендации</a>
+                        <a href="training.html" class="link">Обучение</a>
+                        <a href="contactAdmin.html" class="link">Связаться с администратором</a>
+                        <a href="recommendations.html" class="link active">Рекомендации</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="wrapper-404 text-center">
-                <span>404</span>
-                <strong>Oooops!</strong>
-                <p>+38 093 26 00 000</p>
+            <div class="wrapper_logo">
+                <a class="link-logo" href="index.html">
+                    <img class="logo" src="dist/img/logo.png" alt="">
+                </a>
             </div>
+            <div class="box_inst">
+                <a href="#"><img src="dist/img/iconInst.png"></a>
+            </div>
+            <div class="user white our_ser">
+                <div class="phone">
+                    <a class="btn link-tell" href="#">+38 093 26 00 000</a>
+                </div>
+                <div class="choose_lang">
+                    <a class="btn" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Обратный
+                        звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mr_top">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 box_contaks contact_admin">
+                    <h3 class="text-center">Напишите нам </h3>
+                    <form>
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="E-mail">
+                        <p>Задайте интересующий Вас вопрос</p>
+                        <textarea class="form-control" id="comment"></textarea>
+                        <div class="button">
+                            <button class="btn from-top">Отправить</button>
+                            <div class="mask"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wr_link">
+            <a href="" class="black">Бесплатная консультация</a>
         </div>
     </div>
 </div>
+
 <footer class="back_rose">
     <div class="line text-center">
         <a href="http://overallfuture.com/" class="copyright text-uppercase">Created by</a>
@@ -63,36 +95,6 @@
                     <a class="btn btn_mod" href="#">Перезвоните</a>
                 </form>
                 <p>Например 380 00 00 000</p>
-                <span>Thank you   !</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Modal 2-->
-<div class="modal fade" id="Modal1">
-    <div class="modal-dialog form-modal" role="document">
-        <a type="button" class="close modal_btn_close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></a>
-        <div class="modal-content my_modal">
-            <h5 class="modal-title">Modal title</h5>
-            <div class="modal-body">
-                <form class="form_modal form_wei">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="E-mail">
-                    <p>Ваш вопрос</p>
-                    <textarea class="form-control" id="comment"></textarea>
-                    <button class="btn btn_mod" href="#">Отправит</button>
-                </form>
-                <span>Thank you   !</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Modal Thank you-->
-<div class="modal fade" id="Modal404">
-    <div class="modal-dialog text-center modal_th" role="document">
-        <a type="button" class="close modal_btn_close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></a>
-        <div class="modal-content my_modal">
-            <div class="modal-body">
                 <span>Thank you   !</span>
             </div>
         </div>
