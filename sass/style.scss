@@ -965,11 +965,11 @@ img.mob-header-bg {
           }
           p {
             margin-bottom: 120px;
-            font: 18px MinionProRegular, sans-serif;
+            font: 18px MinionPro-Regular, sans-serif;
             line-height: 21px;
           }
           a.btn_price {
-            font: 20px MinionProRegular, sans-serif;
+            font: 20px MinionPro-Regular, sans-serif;
             color: #404c31;
             border: solid 2px #373f48;
             border-radius: 0;
@@ -1007,7 +1007,7 @@ $secondColor: #FFBED6;
   position: relative;
   border: 3px solid $primaryColor;
   transition: all 300ms ease;
-  box-shadow: 0 4px 10px 2px rgba(black, 0.2);
+  //box-shadow: 0 4px 10px 2px rgba(black, 0.2);
 
   &:before {
     content: '';
@@ -1782,6 +1782,7 @@ div.button:hover {
 
 .form_modal i.wr-input {
   position: relative;
+  display: block;
 }
 .form_modal i.wr-input:before{
   position: absolute;
