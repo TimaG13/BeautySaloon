@@ -11,26 +11,6 @@
   font-style: normal;
 }
 
-//fonts CenturiGothic-Bold
-@font-face {
-  font-family: 'Century GothicBold';
-  src: url('../../fonts/CenturyGothic-Bold/CenturyGothic-Bold.woff2') format('woff2'),
-  url('../../fonts/CenturyGothic-Bold/CenturyGothic-Bold.woff') format('woff'),
-  url('../../fonts/CenturyGothic-Bold/CenturyGothic-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-//fonts MyriadPro-Regular
-@font-face {
-  font-family: MyriadPro-Regular;
-  src: url('../../fonts/MyriadPro/MyriadPro-Regular.woff2') format('woff2'),
-  url('../../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
-  url('../../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 //fonts MinionPro-Regular
 @font-face {
   font-family: MinionPro-Regular;
@@ -87,7 +67,7 @@ a {
 h1 {
   font-weight: 600;
   color: #020202;
-  font: 24px MinionProRegular, sans-serif;
+  font: 24px MinionPro-Regular, sans-serif;
 }
 
 body > .main {
@@ -349,6 +329,9 @@ select::-ms-expand {
 .main .side_menu .button {
   color: initial;
   display: inline-block;
+  &:active{
+    background: none;
+  }
 }
 
 .main .side_menu .button.tog {
@@ -374,7 +357,7 @@ select::-ms-expand {
 }
 
 .header .user .choose_lang a.btn {
-  font-size: 16px;
+  font: 16px  MinionPro-Regular,serif;
   color: #ffffff;
   border: 1px solid #ffffff;
   transition: all .3s;
@@ -384,7 +367,6 @@ select::-ms-expand {
   border-radius: 0;
   padding: 0 15px;
   letter-spacing: 1px;
-  font-family: 'Minion Pro Regular', sans-serif;
 
   &:hover {
     border-color: #ced3d5;
@@ -456,7 +438,7 @@ select::-ms-expand {
 
 .phone a.btn {
   color: #ffffff;
-  font-family: 'Minion Pro Regular', sans-serif;
+  font-family: MinionPro-Regular, serif;
   transition: all .3s;
   font-size: 18px;
   letter-spacing: 1.8px;
@@ -659,7 +641,7 @@ footer {
   color: #000;
   text-decoration: none;
   font-size: 18px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: MinionPro-Regular, sans-serif;
   position: relative;
   &:before {
     position: absolute;
@@ -804,7 +786,7 @@ img.mob-header-bg {
       }
       p {
         color: #e4dede;
-        font-family: MinionPro;
+        font-family:  MinionPro-Regular,serif;
         font-size: 16px;
       }
       form.form_modal {
@@ -817,17 +799,17 @@ img.mob-header-bg {
           text-align: center;
           line-height: 56px;
           padding: 0;
-          font-family: MinionPro;
+          font-family:  MinionPro-Regular,serif;
           font-size: 20.5px;
           color: #262626;
           background-color: #feccde;
         }
         input[placeholder="Ваш номер телефона"]::-webkit-input-placeholder {
-          font-family: MinionPro;
+          font-family: MinionPro-Regular,serif;
           color: #ffffff;
         }
         input[placeholder="Ваш номер телефона"]::-moz-placeholder {
-          font-family: MinionPro;
+          font-family:  MinionPro-Regular,serif;
           color: #ffffff;
         }
         input {
@@ -837,15 +819,15 @@ img.mob-header-bg {
           background-color: #ededed;
           border: none;
           font-size: 20.5px;
-          color: #ffffff;
-          font-family: MinionPro;
+          color: #000;
+          font-family: MinionPro-Regular,serif;
         }
       }
     }
     h5 {
       font-size: 24px;
       letter-spacing: 1.2px;
-      font-family: MinionPro;
+      font-family:  MinionPro-Regular,serif;
       color: #2b2b2c;
       margin-bottom: 30px;
     }
@@ -1233,7 +1215,7 @@ div.button:hover {
   h2 {
     margin: 0 auto;
     max-width: 591px;
-    font: 24px MinionProRegular, sans-serif;
+    font: 24px MinionPro-Regular, sans-serif;
   }
 
   .cont_usl {
@@ -1286,18 +1268,18 @@ div.button:hover {
           .box_content {
             padding: 34px 43px 60px;
             strong {
-              font: 19.5px MyriadPro-Regular, sans-serif;
+              font: 19.5px  MinionPro-Regular, serif;
               margin-bottom: 12px;
             }
             span {
-              font: 19.5px MyriadPro-Regular;
+              font: 19.5px MinionPro-Regular, serif;
               font-weight: bold;
               margin-bottom: 25px;
               color: #a9a9a9;
               display: block;
             }
             p {
-              font: 18px MyriadPro-Regular, sans-serif;
+              font: 18px MinionPro-Regular, serif;
               opacity: 0;
               transition: all .4s;
             }
@@ -1629,7 +1611,7 @@ div.button:hover {
   padding-bottom: 130px;
   margin: 0;
   h4 {
-    font: 22px "Myriad Pro";
+    font: 22px MinionPro-Regular, serif;
     margin-bottom: 100px;
     position: relative;
     &:before {
@@ -1645,7 +1627,7 @@ div.button:hover {
   }
   p {
     margin-bottom: 70px;
-    font-size: 16px;
+    font-size: 18px;
   }
   ul {
 
@@ -1798,38 +1780,34 @@ div.button:hover {
   }
 }
 
-.form_modal {
-
-  i.wr-input {
-    position: relative;
-    &:before {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 1px;
-      background: red;
-      transition: all .4s;
-    }
-    i.icon-vos {
-      position: absolute;
-      display: none;
-      color: #ff0000;
-      font-size: 18px;
-      left: 90%;
-      top: 100%;
-    }
-    i.wr-input.close_pe { //клас который должен добовлятся .close_pe
-      &:before {
-        width: 100%;
-      }
-      i.icon-vos {
-        display: block;
-      }
-    }
-  }
+.form_modal i.wr-input {
+  position: relative;
 }
+.form_modal i.wr-input:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: red;
+  transition: all .4s;
+}
+.form_modal i.wr-input i.icon-vos{
+  position: absolute;
+  display: none;
+  color: #ff0000;
+  font-size: 18px;
+  left: 90%;
+  top: 100%;
+}
+.form_modal i.wr-input.close_pe:before {
+  width: 100%;
+}
+.form_modal i.wr-input.close_pe i.icon-vos {
+  display: block;
+}
+
 
 @media screen and (max-width: 1366px) {
   .wr_desc {
@@ -2004,6 +1982,9 @@ div.button:hover {
     &:after, &:before {
       background: #feccde;
     }
+  }
+  .form-modal .my_modal.p-modal{
+    padding: 15px 50px 10px;
   }
 }
 
