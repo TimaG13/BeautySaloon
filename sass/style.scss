@@ -47,7 +47,10 @@ a {
     text-decoration: none;
   }
 }
-
+i{
+  font-family: MinionPro-Regular,serif;
+  font-style: normal;
+}
 body {
   font-family: MinionPro-Regular, Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 1.5em;
@@ -640,7 +643,7 @@ footer {
 .wr_link .black {
   color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-family: MinionPro-Regular, sans-serif;
   position: relative;
   &:before {
@@ -654,7 +657,9 @@ footer {
     bottom: -15px;
   }
 }
-
+.wr_link.h_recom .black {
+  font-size: 25px;
+}
 .copyright {
   color: #ffffff;
   transition: all .3s;
@@ -873,7 +878,7 @@ img.mob-header-bg {
           margin: 0 auto;
           font-size: 18px;
           color: #ffffff;
-          box-shadow: 0 4px 10px 2px rgba(0, 0, 0, .2);
+          box-shadow: 0 4px 18px -5px rgba(0,0,0,.2);
           transition: all .3s;
           &:hover {
             box-shadow: none;
@@ -1120,7 +1125,7 @@ $secondColor: #FFBED6;
         display: block;
       }
       h3 {
-        font-family: Myriad Pro, sans-serif;
+        font-family: MyriadPro-Regular, serif;
         font-size: 24px;
         color: #2f2f2f;
         margin-bottom: 80px;
@@ -1461,10 +1466,8 @@ div.button:hover {
       padding: 20px 30px;
       background: #FFBED6;
       transition: all 300ms ease;
-      box-shadow: 0 4px 10px 2px rgba(black, 0.2);
 
       &:hover {
-        box-shadow: none;
         color: #f7f7f7;
       }
       &:before {
@@ -1662,12 +1665,13 @@ div.button:hover {
   }
   span.h-programm {
     display: block;
-    font: 22px MinionPro-Regular;
+    font: 23px MinionPro-Regular;
     margin-bottom: 35px;
   }
   ul {
     margin-bottom: 60px;
     padding: 0;
+    font-size: 19px;
   }
   ul.wrapper-description {
 
@@ -1690,7 +1694,7 @@ div.button:hover {
       margin-bottom: 30px;
       p {
         margin-bottom: 9px;
-        font: 15px MinionPro-Regular;
+        font: 19px MinionPro-Regular;
       }
     }
     & li:nth-child(2) {
@@ -1698,12 +1702,11 @@ div.button:hover {
     }
   }
   div.wr_desc_text {
-    & p:first-child {
-      color: #6e6e6e;
-    }
     p {
+      color: #6e6e6e;
       font: 15px MinionPro-Regular;
       margin: 0;
+      font-size: 19px;
     }
   }
 }
@@ -1807,6 +1810,72 @@ div.button:hover {
 }
 .form_modal i.wr-input.close_pe i.icon-vos {
   display: block;
+}
+
+
+// Button Six
+.btn-pr{
+  padding: 1em 3em;
+  border: 3px solid $primaryColor;
+  transition: all 300ms ease;
+  //box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
+
+  &:before{
+    content: '';
+    height: 0%;
+    width: 2px;
+    position: absolute;
+    top: 10%; left: 10%;
+    background: $primaryColor;
+    transition: all 0ms ease;
+  }
+
+  &:after{
+    content: '';
+    height: 80%;
+    width: 0px;
+    position: absolute;
+    top: 10%; left: 10%;
+    background: $primaryColor;
+    transition: all 0ms ease;
+    z-index: -1;
+  }
+
+  &:hover{
+    color: white;
+    box-shadow:none;
+    &:before{
+      content: '';
+      height: 80%;
+      width: 2px;
+      position: absolute;
+      top: 10%; left: 10%;
+      background: $primaryColor;
+      transition: all 300ms ease;
+    }
+
+    &:after{
+      content: '';
+      height: 80%;
+      width: 80%;
+      position: absolute;
+      top: 10%; left: 10%;
+      transition: all 300ms ease;
+      transition-delay: 350ms;
+
+    }
+  }
+}
+
+.wr_link .black.btn-7:before {
+  content: '';
+  height: 0;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #ffffff;
+  transition: all 0ms ease;
 }
 
 

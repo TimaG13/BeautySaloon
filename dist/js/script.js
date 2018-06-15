@@ -33,3 +33,11 @@ $( document ).ready(function() {
         loop:true
     });
 });
+
+var inputR = document.getElementById('inputR');
+// inputR = inputR.getAttribute('width');
+for (i = 0; i < inputR.clientWidth; i++){
+    i = inputR;
+}
+
+console.log(inputR);
