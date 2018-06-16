@@ -21,7 +21,6 @@ $(document).ready(function () {
         // }
     });
 
-
     // menu click document
     jQuery(function ($) {
         $(document).mouseup(function (e) {
