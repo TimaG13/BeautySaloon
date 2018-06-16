@@ -25,6 +25,17 @@ $( document ).ready(function() {
         $( this ).toggleClass( "d_block" );
     });
 
+    // menu click document
+    jQuery(function($){
+        $(document).mouseup(function (e){
+            var div = $(".closed");
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                div.removeClass('active');
+                $( "a.button.tog" ).removeClass("d_block");
+            }
+        });
+    });
 
     // slide
     $(".owl-carousel").owlCarousel({
