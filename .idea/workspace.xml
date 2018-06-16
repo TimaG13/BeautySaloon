@@ -134,7 +134,7 @@
       <path value="$PROJECT_DIR$/src/jquery/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1016" />
     <option name="height" value="599" />
