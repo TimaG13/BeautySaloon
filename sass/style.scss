@@ -1335,10 +1335,10 @@ div.button:hover {
   .owl-nav.disabled {
     display: block;
     position: absolute;
-    top: 191px;
+    top: 50%;
     width: 110%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 
     .owl-prev, .owl-next {
       position: absolute;
@@ -1380,18 +1380,18 @@ div.button:hover {
       padding: 34px 43px 60px;
       strong {
         display: block;
-        font: 19.5px MyriadPro-Regular, sans-serif;
+        font: 19.5px MinionPro-Regular, sans-serif;
         margin-bottom: 12px;
       }
       span {
-        font: 19.5px MyriadPro-Regular;
+        font: 19.5px MinionPro-Regular;
         font-weight: 700;
         margin-bottom: 25px;
         color: #a9a9a9;
         display: block;
       }
       p {
-        font: 18px MyriadPro-Regular, sans-serif;
+        font: 18px MinionPro-Regular, sans-serif;
         opacity: 0;
         transition: all .4s;
       }
