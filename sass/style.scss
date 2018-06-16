@@ -47,10 +47,12 @@ a {
     text-decoration: none;
   }
 }
-i{
-  font-family: MinionPro-Regular,serif;
+
+i {
+  font-family: MinionPro-Regular, serif;
   font-style: normal;
 }
+
 body {
   font-family: MinionPro-Regular, Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 1.5em;
@@ -175,7 +177,7 @@ select::-ms-expand {
     li {
       margin-bottom: 20px;
       a {
-        font: 20px MinionProRegular, sans;
+        font: 20px MinionPro-Regular, sans;
       }
     }
     li.active {
@@ -203,7 +205,7 @@ select::-ms-expand {
   border-bottom: 1px solid #fff;
   display: table;
   color: #ffffff;
-  font: 16px MinionProRegular, sans-serif;
+  font: 16px MinionPro-Regular, sans-serif;
   text-decoration: none;
   margin-bottom: 25px;
 }
@@ -274,6 +276,7 @@ select::-ms-expand {
         width: 24px;
         height: 2px;
         background: #363535;
+        transition: all .3s;
       }
       &:before {
         top: -6px;
@@ -332,7 +335,7 @@ select::-ms-expand {
 .main .side_menu .button {
   color: initial;
   display: inline-block;
-  &:active{
+  &:active {
     background: none;
   }
 }
@@ -360,7 +363,7 @@ select::-ms-expand {
 }
 
 .header .user .choose_lang a.btn {
-  font: 16px  MinionPro-Regular,serif;
+  font: 16px MinionPro-Regular, serif;
   color: #ffffff;
   border: 1px solid #ffffff;
   transition: all .3s;
@@ -657,9 +660,11 @@ footer {
     bottom: -15px;
   }
 }
+
 .wr_link.h_recom .black {
   font-size: 25px;
 }
+
 .copyright {
   color: #ffffff;
   transition: all .3s;
@@ -791,7 +796,7 @@ img.mob-header-bg {
       }
       p {
         color: #e4dede;
-        font-family:  MinionPro-Regular,serif;
+        font-family: MinionPro-Regular, serif;
         font-size: 16px;
       }
       form.form_modal {
@@ -804,17 +809,17 @@ img.mob-header-bg {
           text-align: center;
           line-height: 56px;
           padding: 0;
-          font-family:  MinionPro-Regular,serif;
+          font-family: MinionPro-Regular, serif;
           font-size: 20.5px;
           color: #262626;
           background-color: #feccde;
         }
         input[placeholder="Ваш номер телефона"]::-webkit-input-placeholder {
-          font-family: MinionPro-Regular,serif;
+          font-family: MinionPro-Regular, serif;
           color: #ffffff;
         }
         input[placeholder="Ваш номер телефона"]::-moz-placeholder {
-          font-family:  MinionPro-Regular,serif;
+          font-family: MinionPro-Regular, serif;
           color: #ffffff;
         }
         input {
@@ -825,14 +830,14 @@ img.mob-header-bg {
           border: none;
           font-size: 20.5px;
           color: #000;
-          font-family: MinionPro-Regular,serif;
+          font-family: MinionPro-Regular, serif;
         }
       }
     }
     h5 {
       font-size: 24px;
       letter-spacing: 1.2px;
-      font-family:  MinionPro-Regular,serif;
+      font-family: MinionPro-Regular, serif;
       color: #2b2b2c;
       margin-bottom: 30px;
     }
@@ -878,7 +883,7 @@ img.mob-header-bg {
           margin: 0 auto;
           font-size: 18px;
           color: #ffffff;
-          box-shadow: 0 4px 18px -5px rgba(0,0,0,.2);
+          box-shadow: 0 4px 18px -5px rgba(0, 0, 0, .2);
           transition: all .3s;
           &:hover {
             box-shadow: none;
@@ -1002,17 +1007,31 @@ img.mob-header-bg {
     }
   }
 }
-
+a.btn_price {
+  font: 20px MinionPro-Regular, sans-serif;
+  color: #404c31;
+  border: solid 2px #373f48;
+  border-radius: 0;
+  padding: 15px 30px;
+  &:hover {
+    border-color: #FFBED6;
+    color: #ffffff;
+  }
+}
 //btn hover
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
 $mainFont: 'Montserrat', sans-serif;
 $primaryColor: #FFBED6;
 $secondColor: #FFBED6;
+.cen-btn{
+  margin: 50px 0;
+}
 .btn-6 {
   position: relative;
   border: 3px solid $primaryColor;
   transition: all 300ms ease;
-  //box-shadow: 0 4px 10px 2px rgba(black, 0.2);
+  border-radius: 0;
+  z-index: 10;
 
   &:before {
     content: '';
@@ -1038,8 +1057,8 @@ $secondColor: #FFBED6;
   }
 
   &:hover {
-    color: white;
-    box-shadow: none;
+    color: #FFFFFF;
+
     &:before {
       content: '';
       height: 80%;
@@ -1131,7 +1150,7 @@ $secondColor: #FFBED6;
         margin-bottom: 80px;
       }
       .box_for {
-        font-family: MinionProRegular, sans-serif;
+        font-family: MinionPro-Regular, serif;
         color: #2f2f2f;
         margin-bottom: 35px;
 
@@ -1273,7 +1292,7 @@ div.button:hover {
           .box_content {
             padding: 34px 43px 60px;
             strong {
-              font: 19.5px  MinionPro-Regular, serif;
+              font: 19.5px MinionPro-Regular, serif;
               margin-bottom: 12px;
             }
             span {
@@ -1371,7 +1390,7 @@ div.button:hover {
     &:hover {
       box-shadow: 1px 4px 37px -17px #000;
     }
-    &:hover div.box_content p{
+    &:hover div.box_content p {
       opacity: 1;
     }
   }
@@ -1419,7 +1438,7 @@ div.button:hover {
 .wrapper_prices {
   max-width: 750px;
   margin: 0 auto;
-  padding-bottom: 170px;
+  padding-bottom: 80px;
   background: #ffffff;
 
   .price {
@@ -1444,7 +1463,7 @@ div.button:hover {
         height: 85%;
       }
       ul {
-        font: 20px MinionProRegular, sans-serif;
+        font: 20px MinionPro-Regular, sans-serif;
         padding: 0;
 
         li {
@@ -1787,7 +1806,8 @@ div.button:hover {
   position: relative;
   display: block;
 }
-.form_modal i.wr-input:before{
+
+.form_modal i.wr-input:before {
   position: absolute;
   content: '';
   left: 0;
@@ -1797,7 +1817,8 @@ div.button:hover {
   background: red;
   transition: all .4s;
 }
-.form_modal i.wr-input i.icon-vos{
+
+.form_modal i.wr-input i.icon-vos {
   position: absolute;
   display: none;
   color: #ff0000;
@@ -1805,61 +1826,66 @@ div.button:hover {
   left: 90%;
   top: 100%;
 }
+
 .form_modal i.wr-input.close_pe:before {
   width: 100%;
 }
+
 .form_modal i.wr-input.close_pe i.icon-vos {
   display: block;
 }
 
-
 // Button Six
-.btn-pr{
+.btn-pr {
   padding: 1em 3em;
   border: 3px solid $primaryColor;
   transition: all 300ms ease;
   //box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
 
-  &:before{
+  &:before {
     content: '';
     height: 0%;
     width: 2px;
     position: absolute;
-    top: 10%; left: 10%;
+    top: 10%;
+    left: 10%;
     background: $primaryColor;
     transition: all 0ms ease;
   }
 
-  &:after{
+  &:after {
     content: '';
     height: 80%;
     width: 0px;
     position: absolute;
-    top: 10%; left: 10%;
+    top: 10%;
+    left: 10%;
     background: $primaryColor;
     transition: all 0ms ease;
     z-index: -1;
   }
 
-  &:hover{
+  &:hover {
     color: white;
-    box-shadow:none;
-    &:before{
+    box-shadow: none;
+    &:before {
       content: '';
       height: 80%;
       width: 2px;
       position: absolute;
-      top: 10%; left: 10%;
+      top: 10%;
+      left: 10%;
       background: $primaryColor;
       transition: all 300ms ease;
     }
 
-    &:after{
+    &:after {
       content: '';
       height: 80%;
       width: 80%;
       position: absolute;
-      top: 10%; left: 10%;
+      top: 10%;
+      left: 10%;
       transition: all 300ms ease;
       transition-delay: 350ms;
 
@@ -1877,7 +1903,6 @@ div.button:hover {
   background: #ffffff;
   transition: all 0ms ease;
 }
-
 
 @media screen and (max-width: 1366px) {
   .wr_desc {
@@ -1929,13 +1954,14 @@ div.button:hover {
   }
   .slid_master .slider_box .box_content .box_text {
     display: block;
-  }.slid-modi .item div.box_content p{
-  opacity: 1;
-     }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag{
+  }
+  .slid-modi .item div.box_content p {
+    opacity: 1;
+  }
+  .owl-carousel.owl-theme.owl-loaded.owl-drag {
     width: 100%;
   }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-nav.disabled{
+  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-nav.disabled {
     width: 95%;
   }
 }
@@ -2053,7 +2079,7 @@ div.button:hover {
       background: #feccde;
     }
   }
-  .form-modal .my_modal.p-modal{
+  .form-modal .my_modal.p-modal {
     padding: 15px 50px 10px;
   }
 }
@@ -2094,34 +2120,34 @@ div.button:hover {
   .container .row .col-lg-12 .box_to .box_product {
     padding-left: 5px;
   }
-  .container .row .col-lg-12 .wr_desc.wrapper-training{
+  .container .row .col-lg-12 .wr_desc.wrapper-training {
     padding: 0 10px;
   }
-  .wr_link .black{
+  .wr_link .black {
     font-size: 12px;
   }
-  .wr_link,.wr_link.bx_training{
+  .wr_link, .wr_link.bx_training {
     margin: 75px 0;
   }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content, .slid-modi .item div.box_content{
+  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content, .slid-modi .item div.box_content {
     padding: 5px;
   }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content strong{
+  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content strong {
     font-size: 13px;
     display: inline-block;
     margin-bottom: 10px;
   }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content span{
+  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content span {
     font-size: 11px;
     margin-bottom: 10px;
   }
-  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content p{
+  .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-stage-outer .owl-stage .owl-item .item.slider_box .box_content p {
     font-size: 10px;
   }
-  .mr_top .row .box_contaks form input{
+  .mr_top .row .box_contaks form input {
     width: 100%;
   }
-  .main .side_menu .closed.active{
+  .main .side_menu .closed.active {
     padding-bottom: 0;
   }
 }
@@ -2184,7 +2210,7 @@ div.button:hover {
   .form-modal .my_modal .modal-body form.form_modal input {
     width: 100%;
   }
-  .main .side_menu .closed>ul{
+  .main .side_menu .closed > ul {
     margin: 75px auto 0;
   }
 }
@@ -2253,19 +2279,19 @@ div.button:hover {
   .owl-carousel.owl-theme.owl-loaded.owl-drag .owl-nav.disabled {
     top: 75px;
   }
-  .wrapper_prices .price div ul{
+  .wrapper_prices .price div ul {
     max-width: 60%;
   }
-  .wrapper_prices .price div:before{
+  .wrapper_prices .price div:before {
     left: 55%;
   }
-  .wrapper_prices .price h3{
+  .wrapper_prices .price h3 {
     margin-bottom: 45px;
   }
-  .wrapper_prices .wr_link{
+  .wrapper_prices .wr_link {
     margin: 60px 0 0;
   }
-  .wrapper_prices{
+  .wrapper_prices {
     padding-bottom: 100px;
   }
 }
