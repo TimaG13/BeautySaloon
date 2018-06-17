@@ -26,7 +26,7 @@ $(document).ready(function () {
         $(document).mouseup(function (e) {
             var div = $(".closed");
             if (!div.is(e.target)
-                 && div.has(e.target).length === 0) {
+                && div.has(e.target).length === 0) {
                 div.removeClass('active');
                 $("a.button.tog").removeClass("cross d_block");
                 $("a.button.tog").addClass("menu");
@@ -40,4 +40,41 @@ $(document).ready(function () {
         items: 3,
         loop: true
     });
+
+
+    $(function () {
+        // генератор случайной буквы
+        function str_rand() {
+            var result = '';
+            var words = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+            var max_position = words.length - 1;
+            for (i = 0; i < 4; ++i) {
+                position = Math.floor(Math.random() * max_position);
+                result = result + words.substring(position, position + 1);
+            }
+            return result;
+        }
+        // функция скрол
+        $(document).scroll(function () {
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+            document.getElementById('gen').innerHTML = scrolled + 'px';
+            if ( scrolled >= 900) {
+                // записую случайные буквы
+                var st = setInterval(function () {
+                    $("#short_link").text(str_rand());
+                }, 90);
+                // останавливаю запись букв
+                setTimeout(function () {
+                    clearInterval(st);
+                }, 2000);
+                // записую текст
+                setTimeout(function () {
+                    $("#short_link").html('tima');
+                }, 3001);
+            }
+
+        });
+
+    });
+
 });
