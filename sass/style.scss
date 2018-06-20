@@ -1040,7 +1040,7 @@ $secondColor: #FFBED6;
   border: 3px solid $primaryColor;
   transition: all 300ms ease;
   border-radius: 0;
-  z-index: 10;
+  z-index: 2;
 
   &:before {
     content: '';
@@ -1418,7 +1418,7 @@ div.button:hover {
         margin-bottom: 0;
         .recomm_content {
 
-          span.h_puncht {
+          span.h_puncht a{
             font: 24px MinionPro-Regular, sans-serif;
             color: #000000;
             margin-bottom: 45px;
@@ -1457,17 +1457,10 @@ div.button:hover {
   background: #ffffff;
 
   .price {
-
-    h3 {
-      font-weight: bold;
-      margin-bottom: 80px;
-    }
-
-    div {
+    padding: 0 5px;
+    .wr-prases{
       display: flex;
       justify-content: space-between;
-      position: relative;
-
       &:before {
         position: absolute;
         content: "";
@@ -1475,19 +1468,32 @@ div.button:hover {
         left: 60%;
         background: #FFBED6;
         width: 2px;
-        height: 85%;
+        height: 90%;
       }
-      ul {
+    }
+    h3 {
+      font-weight: bold;
+      margin-bottom: 80px;
+    }
+
+    div {
+      position: relative;
+
+      div {
         font: 20px MinionPro-Regular, sans-serif;
         padding: 0;
 
-        li {
+        div {
           list-style: none;
           margin-bottom: 30px;
+          margin-right: 20px;
         }
       }
-      ul.cen-service {
+      div.cen-service {
         font-weight: bold;
+        & span:nth-child(1){
+
+        }
       }
     }
   }
@@ -2018,7 +2024,7 @@ div.button:hover {
   }
   .main .side_menu .closed.active {
     top: 0;
-    height: 700px;
+    height: 100vh;
   }
   .header.mob_head {
     margin-bottom: 245px;
@@ -2316,3 +2322,17 @@ div.button:hover {
     width: 212px;
   }
 }
+
+
+
+
+
+//#short_link{
+//  color: white;
+//  background: url(../img/black-shoe-white-shoelaces-5183520.jpg) no-repeat;
+//  background-clip: text;
+//  font-weight: bolder;
+//  -webkit-background-clip: text;
+//  text-fill-color: transparent;
+//  -webkit-text-fill-color: transparent;
+//}
