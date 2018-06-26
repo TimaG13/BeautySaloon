@@ -200,7 +200,7 @@ select::-ms-expand {
       }
     }
   }
-  .wrapper-link{
+  .wrapper-link {
     opacity: 0;
   }
 }
@@ -312,10 +312,12 @@ select::-ms-expand {
   z-index: 1;
   opacity: 1;
 }
+
 .main .side_menu .closed .wrapper-link, .main .side_menu .closed.active ul,
-.main .side_menu .closed .wrapper-link, .main .side_menu .closed.active .wrapper-link{
+.main .side_menu .closed .wrapper-link, .main .side_menu .closed.active .wrapper-link {
   opacity: 1;
 }
+
 .main .side_menu .closed > ul {
   margin-left: 81px;
   list-style: none;
@@ -887,12 +889,12 @@ img.mob-header-bg {
           margin-bottom: 40px;
           color: #000;
         }
-        button {
+        a {
           display: block;
           margin: 0 auto;
           font-size: 18px;
           color: #ffffff;
-          box-shadow: 0 0 22px -3px rgba(0,0,0,.2);
+          box-shadow: 0 0 22px -3px rgba(0, 0, 0, .2);
           transition: all .3s;
           &:hover {
             box-shadow: none;
@@ -1016,6 +1018,7 @@ img.mob-header-bg {
     }
   }
 }
+
 a.btn_price {
   font: 20px MinionPro-Regular, sans-serif;
   color: #404c31;
@@ -1027,14 +1030,16 @@ a.btn_price {
     color: #ffffff;
   }
 }
+
 //btn hover
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
 $mainFont: 'Montserrat', sans-serif;
 $primaryColor: #FFBED6;
 $secondColor: #FFBED6;
-.cen-btn{
+.cen-btn {
   margin: 50px 0;
 }
+
 .btn-6 {
   position: relative;
   border: 3px solid $primaryColor;
@@ -1184,7 +1189,7 @@ $secondColor: #FFBED6;
           padding: 0;
           border-radius: 0;
           border-bottom: 1px solid #2f2f2f;
-          &:hover{
+          &:hover {
             color: #FFBED6;
             border-bottom-color: #FFBED6;
           }
@@ -1258,18 +1263,14 @@ div.button:hover {
 
   .cont_usl {
     padding: 85px 0;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 
     div {
       height: 188px;
       max-width: 210px;
       margin: 0 85px 35px;
       vertical-align: top;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: inline-block;
 
       img {
         display: block;
@@ -1278,6 +1279,10 @@ div.button:hover {
       span {
         color: #2f2f2f;
         font: 18.5px MinionPro-Regular, sans-serif;
+        vertical-align: middle;
+        display: block;
+        margin: 20px auto 0;
+
       }
     }
   }
@@ -1343,7 +1348,7 @@ div.button:hover {
     top: 50%;
     width: 110%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     .owl-prev, .owl-next {
       position: absolute;
@@ -1418,7 +1423,7 @@ div.button:hover {
         margin-bottom: 0;
         .recomm_content {
 
-          span.h_puncht a{
+          span.h_puncht a {
             font: 24px MinionPro-Regular, sans-serif;
             color: #000000;
             margin-bottom: 45px;
@@ -1458,9 +1463,9 @@ div.button:hover {
 
   .price {
     padding: 0 5px;
-    .wr-prases{
-      display: flex;
-      justify-content: space-between;
+    position: relative;
+
+    .wr-prases {
       &:before {
         position: absolute;
         content: "";
@@ -1469,6 +1474,21 @@ div.button:hover {
         background: #FFBED6;
         width: 2px;
         height: 90%;
+      }
+      .name_service {
+        display: flex;
+        justify-content: space-between;
+        & div:nth-child(1) {
+          max-width: 59%;
+        }
+        & div:nth-child(2) {
+          max-width: 30%;
+        }
+
+        div span {
+          font-weight: bold;
+          vertical-align: sub;
+        }
       }
     }
     h3 {
@@ -1486,13 +1506,7 @@ div.button:hover {
         div {
           list-style: none;
           margin-bottom: 30px;
-          margin-right: 20px;
-        }
-      }
-      div.cen-service {
-        font-weight: bold;
-        & span:nth-child(1){
-
+          margin-right: 15px;
         }
       }
     }
@@ -1685,7 +1699,7 @@ div.button:hover {
         margin-bottom: 20px;
       }
       p {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
@@ -1775,10 +1789,15 @@ div.button:hover {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+      z-index: -1;
     }
     p {
       font-size: 25px;
       color: #000;
+      a {
+        z-index: 999;
+        color: #000;
+      }
     }
   }
 }
@@ -1923,6 +1942,20 @@ div.button:hover {
   left: 10%;
   background: #ffffff;
   transition: all 0ms ease;
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        form.form_modal.form_wei {
+          a.btn_mod {
+            background: #DDDDDD;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -2322,10 +2355,6 @@ div.button:hover {
     width: 212px;
   }
 }
-
-
-
-
 
 //#short_link{
 //  color: white;
